@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonfire OS [beta 0,1]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bonfire.svg" type="image/x-icon">
+    <style>
+        body {
+            background-image: url("bg.jpg");  
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+        <p style="font-size: larger;" class="time">09 : 41</p>
+        <div>
+            <button class="home-button"><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon></button> 
+        </div>
+        <button class="tb-App" onclick="openWindow()"><ion-icon name="logo-github" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="logo-steam" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="logo-stackoverflow" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="logo-apple-appstore" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="logo-docker" style="font-size: 20px;"></ion-icon></button>
+    </div>
+    <div id="floating-window" class="floating-window">
+        <div class="window-content">
+            <span class="close-btn" onclick="closeWindow()"><ion-icon name="close-circle-sharp"></ion-icon></span>
+            <h2><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon> | Welcome to Bonfire OS</h2>
+            <hr class="sep">
+            <p>
+                Beta 0.5 update log<br>
+                -Fixed alot of bugs<br>
+                -Fixed preformace issues
+            </p>
+            <p>
+                Beta 0.6 features planned<br>
+                -Fix apps<br>
+                -Github intergations
+            </p><hr class="sep">
+            <a href="TermsOfService.html"><button class="TOS">Terms of service</button></a>
+            <a href="error.html"><button class="TOS">Price</button></a>
+            <a href="error.html"><button class="TOS">Privacy policy</button></a>
+            <a href="error.html"><button class="TOS">Log in with a Bonfire account</button></a>
+          <hr class="sep">
+          <h2>Dev Team</h2>
+          <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
+          <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
