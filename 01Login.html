@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonfire OS [beta 0,6] login</title>
+    <link rel="shortcut icon" href="bonfire.svg" type="image/x-icon">
+    <style class="background-fade">
+        body {
+            background-image: url("bg.jpg");  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            position: fixed;
+            height: 500px;
+            width: 500px;
+            background-color: white;
+            border-radius: 27px;
+            top: 20%;
+            left: 35%;
+            text-align: center;
+            bottom: 50%;
+        }
+
+        .bn {
+            transition: 0.4s;
+            transition-delay: 0.2s;
+            background-color: rgb(79, 136, 223);
+            border: hidden;
+            border-radius: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+        }
+        
+
+        .bn:hover {
+            transition-delay: 0.2s;
+            transition: 0.4s ease-in-out;
+            width: 120px;
+            height: 35px;
+            background-color: black;
+            border-radius: 25px;
+            margin-top: 1px;
+            box-shadow: inset 0px 0px 3px white;
+            
+        }
+
+        .alt {
+            transition: 0.4s ease-out;
+            height: 30px;
+            width: 30px;
+            border-style: hidden;
+            border-radius: 25px;
+            background-color: rgb(79, 136, 223);
+            color: white;
+        }
+
+        .alt:hover {
+            transition-delay: 0.2s;
+            animation-duration: 3s;
+            transition: 0.4s ease-in-out;
+            width: 60px;
+            background-color: black;
+            border-radius: 25px;
+            margin-top: 1px;
+            box-shadow: inset 0px 0px 3px white;
+        }
+
+        .in {
+            transition: 0.4s ease-out;
+            background-color: rgb(232, 242, 252);
+            border: hidden;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 250px;
+        }
+
+        .in:hover {
+            background-color: black;
+            border-color: lightgray;
+            transition: 0.4s ease-in-out;
+            width: 275px;
+            height: 35px;
+            border-radius: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><h1><ion-icon name="bonfire-outline" style="color: black;"></ion-icon> Bonfire OS</h1><br><br>
+        <input type="text" placeholder="Username" class="in"><br><br>
+        <input type="email" placeholder="Your E-Mail" class="in"><br><br>
+        <input type="password" minlength="8" maxlength="10" placeholder="Password" class="in"><br><br><br>
+        <input type="password" minlength="4" maxlength="4" placeholder="Product-key" class="in"><br><br>
+        <a href="error.html"><button class="alt"><ion-icon name="logo-github"></ion-icon></button></a>
+        <a href="error.html"><button class="alt"><ion-icon name="logo-apple"></ion-icon></button></a>
+        <a href="error.html"><button class="alt"><ion-icon name="logo-google"></ion-icon></button></a>
+        <a href="error.html"><button class="alt"><ion-icon name="logo-microsoft"></ion-icon></button></a>
+        <a href="error.html"><button class="alt"><ion-icon name="logo-discord"></ion-icon></button></a><br><br>
+        <a href="index.html"><button class="bn">Login</button></a> | <a href="warning.html"><button class="bn">Skip</button></a>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

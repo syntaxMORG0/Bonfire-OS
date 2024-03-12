@@ -71,7 +71,6 @@ body {
 
 .TOS {
     border-radius: 10px;
-    border-style: double;
     border-color: #ffffff;
     transition: 1s;
     color: black;
@@ -85,7 +84,7 @@ body {
     border-radius: 20px;
     color: #ffffff;
     font-size: larger;
-    box-shadow: inset 0px 0px 3px white;
+    box-shadow: inset 0px 0px 0px 0px white;
 }
 
 .floating-window {
@@ -121,4 +120,35 @@ body {
 
 .backround-fade {
     transition: 0.3s ease-in-out;
+}
+
+.TOS-button {
+    border-radius: 10px;
+    border-style: double;
+    border-color: #ffffff;
+    transition: 1s;
+    color: black;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.TOS-button:hover {
+    transition-delay: 0.2s;
+    transition: 0.4s;
+    background-color: black;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: larger;
+}
+
+.checkbox-style {
+    border-radius: 10px;
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.checkbox-style:hover {
+    height: 10px;
+    width: 10px;
+
 }

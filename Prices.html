@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonfire OS [beta 0,6]</title>
+    <link rel="shortcut icon" href="bonfire.svg" type="image/x-icon">
+    <style class="background-fade">
+        body {
+            background-image: url("bg.jpg");  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            position: fixed;
+            height: 550px;
+            width: 500px;
+            background-color: white;
+            border-radius: 27px;
+            top: 20%;
+            left: 35%;
+            text-align: center;
+            bottom: 50%;
+        }
+
+        .bn {
+            background-color: rgb(79, 136, 223);
+            border: hidden;
+            border-radius: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            transition: 0.4s ease-out;
+        }
+        
+        .bn-0-5 {
+
+            background-color: rgb(79, 136, 223);
+            border: hidden;
+            border-radius: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            animation: wee 6s linear 0s infinite;
+            animation-timing-function: ease-in-out;
+            transition: 0.4s ease-out;
+        }
+
+        @keyframes wee {
+
+            0%   {background-color:rgb(71, 126, 189); color: white;}
+            25%  {background-color:whitesmoke; color: black;}
+            50%  {background-color:rgb(57, 102, 191); color: white;}
+            75%  {background-color:whitesmoke; color: black;}
+            100% {background-color:rgb(31, 103, 228); color: white;}
+        }
+
+        .bn-0-5:hover {
+            width: 125px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            transition: 0.4s ease-in-out;
+            border-style: hidden;
+            margin-top: 2px;
+            box-shadow: inset -5px -5px 1px black;
+        }
+
+        .bn1:hover {
+            width: 125px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            transition: 0.4s ease-in-out;
+            border-style: hidden;
+            margin-top: 2px;
+            box-shadow: inset -5px -5px 1px black;
+        }
+
+        .bn:hover {
+            width: 125px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            transition: 0.4s ease-in-out;
+            border-style: hidden;
+            margin-top: 2px;
+            box-shadow: inset -5px -5px 1px black;
+        }
+
+
+        .bn1 {
+            background-color: rgb(79, 136, 223);
+            border: hidden;
+            border-radius: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            animation: colorRotate1 6s linear 0s infinite;
+            transition: 0.4s ease-out;
+        }
+
+        .alt {
+            height: 30px;
+            width: 30px;
+            border-style: hidden;
+            border-radius: 25px;
+            background-color: rgb(79, 136, 223);
+            color: white;
+        }
+
+        .alt:hover {
+            transition-delay: 0.2s;
+            transition: 0.4s ease-in-out;
+            width: 25px;
+            background-color: black;
+            border-radius: 25px;
+        }
+
+        .in {
+            background-color: rgb(232, 242, 252);
+            border: hidden;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            width: 250px;
+        }
+
+        .TOS-button {
+            border-radius: 20px;
+            width: 75px;
+            height: 35px;
+            border-color: rgb(79, 136, 223);
+            background-color: white;
+            animation: colorRotate 6s linear 0s infinite;
+            border-style: hidden;
+        }
+
+        @keyframes colorRotate {
+        from {
+            color: #6666ff;
+            border-color: #6666ff;
+        }
+        10% {
+            color: #0099ff;
+            border-color: #0099ff;
+        }
+        50% {
+            color: #00ff00;
+            border-color: #00ff00;
+        }
+
+        100% {
+            color: #6666ff;
+            border-color: #6666ff;
+        }
+
+        }
+
+        @keyframes colorRotate1 {
+        from {
+            background-color: #6666ff;
+        }
+        10% {
+            background-color: #0099ff;
+        }
+        50% {
+            background-color: #00ff00;
+        }
+        75% {
+            background-color: #ff3399;
+        }
+            100% {
+            background-color: #6666ff;
+        }
+        }
+
+        .text {
+            height: 90px;
+            width: 400px;
+            text-align: center;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><h1><ion-icon name="bonfire-outline" style="color: black;"></ion-icon> Bonfire OS</h1><br>
+        <div class="prices">
+            <h4>personal | Family | Enterprise</h4>
+            <button class="bn">5.99$</button> | <button class="bn-0-5">14.99$</button> | <button class="bn1">99.99$/month</button>
+            <h6>1 Person <ion-icon name="checkmark-outline"></ion-icon> | 3 members <ion-icon name="checkmark-outline"></ion-icon> | 10 Workers <ion-icon name="checkmark-outline"></ion-icon></h6>
+            <h6>5 GB cloud storage <ion-icon name="checkmark-outline"></ion-icon> | 35 GB shared cloud storage <ion-icon name="checkmark-outline"></ion-icon> | 10 TB shared cloud storage <ion-icon name="checkmark-outline"></ion-icon></h6>
+            <h6>Change Background <ion-icon name="close-outline"></ion-icon>| Change background <ion-icon name="checkmark-outline"></ion-icon> | Change background <ion-icon name="checkmark-outline"></ion-icon></h6>
+            <h6>Remote desktop <ion-icon name="close-outline"></ion-icon> | Remote desktop <ion-icon name="close-outline"></ion-icon> | Remote desktop <ion-icon name="checkmark-outline"></ion-icon></h6>
+            <h6>Beta Program <ion-icon name="close-outline"></ion-icon> | Beta Program Limited | Beta Program <ion-icon name="checkmark-outline"></ion-icon></h6>
+            <a href="warning.html"><button class="TOS-button">Go back</button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
