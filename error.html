@@ -6,6 +6,7 @@
     <title>Bonfire OS [beta 0,6]</title>
     <link rel="shortcut icon" href="bonfire.svg" type="image/x-icon">
     <style class="background-fade">
+
         body {
             background-image: url("bg.jpg");
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,13 +23,29 @@
             text-align: center;
             bottom: 50%;
         }
+
+        .TOS {
+            border-radius: 15px;
+            border-style: hidden;
+            background-color:  gray;
+            color: white;
+            transition: 0.6s ease-out; 
+        }
+
+        .TOS:hover {
+            transition-delay: 0.4s; 
+            transition: 0.4s ease-in-out; 
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 3px white;  
+            transition: 0.4s ease-in-out;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <br><br><br><br><h1><ion-icon name="bonfire-outline" style="color: black;"></ion-icon> Bonfire OS</h1><br><br>
         [ERROR 404]<br>
-        There is nothing here yet =/<br>you can <a href="index.html"><button>Go back</button></a> or <br>
+        There is nothing here yet =/<br>you can <a href="index.html"><button class="TOS">Go back</button></a> or <br>
         try and contact the devs!<br><br>
         <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
         <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>

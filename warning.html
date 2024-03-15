@@ -70,15 +70,46 @@
             text-align: center;
             padding-left: 10%;
         }
+
+        .bn3 {
+            border-radius: 15px;
+            transition: 0.6s ease-out; 
+            border-style: hidden;
+            background-color: white;
+        }
+
+        .bn3:hover {
+            transition: 0.4s ease-in-out;
+            background-color: black;
+            border-radius: 20px;
+            border-style: none;
+            color: white;
+            height: 30px;
+        }
+
+        .TOS-button {
+            border-radius: 15px;
+            transition: 0.6s ease-out; 
+            border-style: hidden;
+            background-color: white;
+        }
+
+        .TOS-button:hover {
+            border-radius: 15px;
+            transition: 0.6s ease-out; 
+            border-style: hidden;
+            background-color: white;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <br><h1><ion-icon name="bonfire-outline" style="color: black;"></ion-icon> Bonfire OS</h1><br><br>
         <div class="text">
-            <p>Warning!! You are skipping the login page you will enter a free version of the OS</p>
+            <p>Warning! You are skipping the login page you will enter a free version of the OS</p>
         </div>
-        <a href="index.html"><button><ion-icon name="alert-circle-outline"></ion-icon> I understand!</button></a> | <a href="Prices.html"><button><ion-icon name="wallet-outline"></ion-icon> Prices</button></a> | <a href="01Login.html"><button class="TOS-button"><ion-icon name="person-circle-outline"></ion-icon> Login</button>
+        <a href="index.html"><button class="bn3"><ion-icon name="alert-circle-outline"></ion-icon> I understand!</button></a> | <a href="Prices.html"><button class="bn3"><ion-icon name="wallet-outline"></ion-icon> Prices</button></a> | <a href="01Login.html"><button class="TOS-button"><ion-icon name="person-circle-outline"></ion-icon> Login</button>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

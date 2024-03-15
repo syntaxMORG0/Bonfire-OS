@@ -12,6 +12,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 2s ease-in-out;
+    box-shadow: inset 0px -3.75px 0px 0px lightgray;
+}
+.taskbar:hover{
+    height: 60px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.7s ease-in-out; 
+    width: 95%;
+    margin-left: 35px;
+    box-shadow: inset 0px -7px 0px 0px lightgrey;
 }
 
 /*homebutton here*/
@@ -151,4 +162,8 @@ body {
     height: 10px;
     width: 10px;
 
+}
+
+.winname {
+    transform: translateY(-60%);
 }

@@ -10,15 +10,27 @@
         body {
             background-image: url("bg.jpg");  
         }
+        
+        .bn4 {
+            border-radius: 15px;
+            background-color: white;
+            border-style: hidden;
+            transition: 0.6s ease-out;
+        }
+
+        .bn4:hover {
+            color: rgb(98, 98, 98);
+            transition: 0.4s ease-in-out;
+            font-weight: 400;
+        }
     </style>
 </head>
 <body>
     <div class="taskbar">
-        <p style="font-size: larger;" class="time">09 : 41</p>
         <div>
             <button class="home-button"><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon></button> 
         </div>
-        <button class="tb-App" onclick="openWindow()"><ion-icon name="logo-github" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App" onclick="showWindow1()""><ion-icon name="logo-github" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-steam" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-stackoverflow" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-apple-appstore" style="font-size: 20px;"></ion-icon></button>
@@ -27,7 +39,7 @@
     <div id="floating-window" class="floating-window">
         <div class="window-content">
             <span class="close-btn" onclick="closeWindow()"><ion-icon name="close-circle-sharp"></ion-icon></span>
-            <h2><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon> | Welcome to Bonfire OS</h2>
+            <h3><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon> | Welcome to Bonfire OS free version</h3>
             <hr class="sep">
             <p>
                 Beta 0.6 update log<br>
@@ -49,6 +61,20 @@
           <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
         </div>
     </div>
+    <div id="floating-window1" class="floating-window">
+        <div class="window-content">
+            <p class="winname"><ion-icon name="logo-github"></ion-icon> | Github</p>
+            <H1>Github Repo search</H1>
+            <p>WARNING!! Please Log in with a github account or a bonfire account before you use this app</p>
+            <a href="01Login.html"><button class="bn4">Sign in</button></a> | <a href="error.html"><button class="bn4">Sign in with <ion-icon name="logo-github"></ion-icon></button></a>
+            <hr>
+            <p>If you have problems with this please contact the devs</p>
+            <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
+            <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
+        </div>
+    </div>  
+    <script src="window1.js"></script>
+    <script src=""></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>

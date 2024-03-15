@@ -1,0 +1,6 @@
+<div id="floating-window2" class="floating-window">
+        <div class="window-content">
+            <p class="winname"><ion-icon name="logo-steam"></ion-icon> | steam</p>
+            <!-- Add your inputs or other content here -->
+        </div>
+    </div>  
