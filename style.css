@@ -82,20 +82,11 @@ body {
 
 .TOS {
     border-radius: 10px;
-    border-color: #ffffff;
+    border: hidden;
     transition: 1s;
     color: black;
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.TOS:hover {
-    transition-delay: 0.2s;
-    transition: 0.4s;
-    background-color: black;
-    border-radius: 20px;
-    color: #ffffff;
-    font-size: larger;
-    box-shadow: inset 0px 0px 0px 0px white;
 }
 
 .floating-window {

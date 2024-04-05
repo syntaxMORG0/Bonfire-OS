@@ -23,6 +23,20 @@
             transition: 0.4s ease-in-out;
             font-weight: 400;
         }
+
+        .floating-window69 {
+                position: fixed;
+                top: 50%; /* Center vertically */
+                left: 50%; /* Center horizontally */
+                transform: translate(-50%, -50%);
+                width: 700px;
+                height: 500px;
+                background-color: #ffffff;
+                border: 1px solid #000000;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+                border-radius: 10px;
+            }
     </style>
 </head>
 <body>
@@ -36,19 +50,50 @@
         <button class="tb-App"><ion-icon name="logo-apple-appstore" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-docker" style="font-size: 20px;"></ion-icon></button>
     </div>
+
+    <div id="floating-window1" class="floating-window">
+        <div class="window-content">
+            <p class="winname"><ion-icon name="logo-github"></ion-icon> | Github</p> 
+            <H1>Github Repo search</H1>
+            <p>WARNING!! Please Log in with a github account or a bonfire account before you use this app</p>
+            <a href="01Login.html"><button class="bn4">Sign in</button></a> | <a href="error.html"><button class="bn4">Sign in with <ion-icon name="logo-github"></ion-icon></button></a>
+            <hr>
+            <p>If you have problems with this please contact the devs</p>
+            <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
+            <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
+        </div>
+    </div>
+
+    <div id="floating-window2" class="floating-window69">
+        <div class="window-content">
+            <ion-icon name="cog-outline"></ion-icon> | Settings <hr>
+            <h2>Settings <ion-icon name="bonfire"></ion-icon>Bonfire OS[beta 0.7]</h2>
+            <hr>
+            <h4>Account and Status</h4>
+            React.text={Account:} React.cloudVar{null}<br>    
+            React.text={Product_key:} react.vartext{free_version}<br><br>
+            <hr><h4>Compiler and NERD settings</h4>
+            <input type="file" value="Upload custom compiler">
+            <br> Default compiler is React 4x <br><br>
+            Enable linux Modding <input type="checkbox"> [Warning!] remember to respect the TOS when modding this OS<br>
+            Enable Remote Desktop <input type="checkbox" disabled> [Warning!] You need the Bonfire OS enterprise plan to do this! <br>
+            Enable <ion-icon name="logo-github"></ion-icon>Github intergration <input type="checkbox"> [Warning!] This is in a Alpha state can be unstable
+            
+        </div>
+    </div>
+
     <div id="floating-window" class="floating-window">
         <div class="window-content">
             <span class="close-btn" onclick="closeWindow()"><ion-icon name="close-circle-sharp"></ion-icon></span>
             <h3><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon> | Welcome to Bonfire OS free version</h3>
             <hr class="sep">
             <p>
-                Beta 0.6 update log<br>
-                -Fixed apps<br>
-                -Fixed emtpy pages
-                
+                Beta 0.7 <br>
+                -visual overhaul <br>
+                -app bug fix
             </p>
             <p>
-                Beta 0.7 features planned<br>
+                Beta 0.8 features planned<br>
                 -Github intergations
             </p><hr class="sep">
             <a href="TermsOfService.html"><button class="TOS">Terms of service</button></a>
@@ -60,21 +105,12 @@
           <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
           <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
         </div>
-    </div>
-    <div id="floating-window1" class="floating-window">
-        <div class="window-content">
-            <p class="winname"><ion-icon name="logo-github"></ion-icon> | Github</p>
-            <H1>Github Repo search</H1>
-            <p>WARNING!! Please Log in with a github account or a bonfire account before you use this app</p>
-            <a href="01Login.html"><button class="bn4">Sign in</button></a> | <a href="error.html"><button class="bn4">Sign in with <ion-icon name="logo-github"></ion-icon></button></a>
-            <hr>
-            <p>If you have problems with this please contact the devs</p>
-            <a href="https://github.com/SuperSpaceStep"><button class="TOS"><ion-icon name="logo-github"></ion-icon> SuperSpaceStep</button></a>
-            <a href="https://github.com/syntaxMORG0"><button class="TOS"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button></a>
-        </div>
-    </div>  
+    </div> 
+    
     <script src="window1.js"></script>
-    <script src=""></script>
+    <script src="window3.js"></script>
+    <script src="window2.js"></script>
+    <script src="windowDocs.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
