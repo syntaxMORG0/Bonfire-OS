@@ -30,13 +30,95 @@
                 left: 50%; /* Center horizontally */
                 transform: translate(-50%, -50%);
                 width: 700px;
-                height: 500px;
+                height: 550px;
                 background-color: #ffffff;
                 border: 1px solid #000000;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
                 z-index: 9999;
                 border-radius: 10px;
             }
+
+        
+        /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.hidden {
+    color: #00000000;
+    font-size: smaller;
+
+}
+
+.epic-button33 {
+    color: #000000;
+    border-radius: 20px;
+    border-style: solid;
+    width: 146px;
+    text-align: center;
+    transition: 0.4s ease-out;
+}
+
+.epic-button33:hover {
+  border-color: gray;
+  transition: 0.4s ease-in-out;
+  box-shadow: 2px 2px 2px 0px black;
+}
+
     </style>
 </head>
 <body>
@@ -45,10 +127,12 @@
             <button class="home-button"><ion-icon name="bonfire" style="font-size: 20px;"></ion-icon></button> 
         </div>
         <button class="tb-App" onclick="showWindow1()""><ion-icon name="logo-github" style="font-size: 20px;"></ion-icon></button>
-        <button class="tb-App"><ion-icon name="logo-steam" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-stackoverflow" style="font-size: 20px;"></ion-icon></button>
-        <button class="tb-App"><ion-icon name="logo-apple-appstore" style="font-size: 20px;"></ion-icon></button>
         <button class="tb-App"><ion-icon name="logo-docker" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="logo-react" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="folder-outline" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="cog-outline" style="font-size: 20px;"></ion-icon></button>
+        <button class="tb-App"><ion-icon name="document-outline" style="font-size: 20px;"></ion-icon></button>
     </div>
 
     <div id="floating-window1" class="floating-window">
@@ -70,14 +154,22 @@
             <h2>Settings <ion-icon name="bonfire"></ion-icon>Bonfire OS[beta 0.7]</h2>
             <hr>
             <h4>Account and Status</h4>
-            React.text={Account:} React.cloudVar{null}<br>    
-            React.text={Product_key:} react.vartext{free_version}<br><br>
-            <hr><h4>Compiler and NERD settings</h4>
-            <input type="file" value="Upload custom compiler">
-            <br> Default compiler is React 4x <br><br>
-            Enable linux Modding <input type="checkbox"> [Warning!] remember to respect the TOS when modding this OS<br>
-            Enable Remote Desktop <input type="checkbox" disabled> [Warning!] You need the Bonfire OS enterprise plan to do this! <br>
-            Enable <ion-icon name="logo-github"></ion-icon>Github intergration <input type="checkbox"> [Warning!] This is in a Alpha state can be unstable
+            Account: Not Signed in <a href="01Login.html"><button>sign in here</button></a><br>    
+            Product key: free version <a href="Prices.html"><button>buy a key here</button></a><br><br>
+            <hr><h4>NERD settings</h4>
+            <input type="file" class="epic-button33"> <value="Upload-custom-background-image">custom background<br><br>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label> | Enable linux Modding <br><br>
+              <label class="switch">
+                <input type="checkbox" disabled>
+                <span class="slider round"></span>
+              </label> | Enable Remote Desktop<br><br>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label> | Enable <ion-icon name="logo-github"></ion-icon>Github intergration<br><br>
             
         </div>
     </div>
@@ -110,7 +202,7 @@
     <script src="window1.js"></script>
     <script src="window3.js"></script>
     <script src="window2.js"></script>
-    <script src="windowDocs.js"></script>
+    <script src="window4.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
