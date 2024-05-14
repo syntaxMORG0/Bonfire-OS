@@ -4,25 +4,23 @@ body {
 
 .taskbar {
     position: fixed;
-    bottom: 1%;
-    width: 99%;
-    height: 45px;
+    bottom: 0%;
+    width: 94%;
+    height: 55px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 70px 70px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 2s ease-in-out;
     box-shadow: inset 0px -3.75px 0px 0px lightgray;
+    margin-left: 73px
 }
 .taskbar:hover{
-    height: 60px;
-    border-radius: 25px;
-    margin-top: 15px;
     transition: 0.7s ease-in-out; 
-    width: 95%;
-    margin-left: 35px;
+    border-radius: 35px 35px 0px 0px;
     box-shadow: inset 0px -7px 0px 0px lightgrey;
+    transform: scale(1.05);
 }
 
 /*homebutton here*/
